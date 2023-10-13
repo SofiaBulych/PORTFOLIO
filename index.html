@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПРОДУКЦІЯ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="bi bi-piggy-bank-fill"></i> М'яскоHUB</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">М'яскоHUB</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-piggy-bank-fill"></i> Про нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./products.html"><i class="bi bi-handbag-fill"></i> Продукція</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-telephone-fill"></i> Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="./images/image1.jpg" alt="Ковбаса"> 
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Ковбаска копчена</h5>
+                                69 грн
+                            </div>
+                          </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Ковбаска копчена', 69)">Додати в кошик</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img style="height: 220px;" class="card-img-top" src="./images/image2.jpg" alt="Ковбаса">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Ковбаска варена</h5>
+                                280 грн
+                            </div>
+                          </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Ковбаска варена', 280)">Додати в кошик</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                  <div class="card h-100">
+                      <img class="card-img-top" src="./images/image3.jpg" alt="Ковбаса"> 
+                      <div class="card-body p-4">
+                          <div class="text-center">
+                              <h5 class="fw-bolder">Ковбаска для гриля</h5>
+                              150 грн
+                          </div>
+                        </div>
+                      <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Ковбаска для гриля', 150)">Додати в кошик</a></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <img style="height: 220px;" class="card-img-top" src="./images/image4.jpg" alt="Ковбаса"> 
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Кабаноси</h5>
+                            65 грн
+                        </div>
+                      </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Кабаноси', 65)">Додати в кошик</a></div>
+                    </div>
+                </div>
+            </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <img style="height: 220px;" class="card-img-top" src="./images/image5.jpg" alt="Сосиски"> 
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Сосиски</h5>
+                            101 грн
+                        </div>
+                      </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Сосиски', 101)">Додати в кошик</a></div>
+                    </div>
+                </div>
+            </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <img style="height: 220px;" class="card-img-top" src="./images/image6.jpg" alt="Сосиски"> 
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Сардельки</h5>
+                            255 грн
+                        </div>
+                      </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Сардельки', 255)">Додати в кошик</a></div>
+                    </div>
+                </div>
+            </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <img style="height: 220px;" class="card-img-top" src="./images/image7.jpg" alt="Хамон"> 
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Хамон</h5>
+                            130 грн
+                        </div>
+                      </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Хамон', 130)">Додати в кошик</a></div>
+                    </div>
+                </div>
+            </div>
+              <div class="col mb-5">
+                <div class="card h-100">
+                    <img style="height: 220px;" class="card-img-top" src="./images/image8.jpg" alt="Прошутто"> 
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h5 class="fw-bolder">Прошутто</h5>
+                            392 грн
+                        </div>
+                      </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Прошутто', 392)">Додати в кошик</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+              <div class="card h-100">
+                  <img class="card-img-top" src="./images/image9.jpg" alt="Фарш"> 
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <h5 class="fw-bolder">Рибний фарш</h5>
+                          55 грн
+                      </div>
+                    </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Рибний фарш', 55)">Додати в кошик</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+              <div class="card h-100">
+                  <img height="138px" class="card-img-top" src="./images/image10.jpg" alt="Риба">
+                  <div class="card-body p-4">
+                      <div class="text-center">
+                          <h5 class="fw-bolder">Рибні палички</h5>
+                          170 грн
+                      </div>
+                    </div>
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Рибні палички', 170)">Додати в кошик</a></div>
+                  </div>
+              </div>
+          </div>
+          <div class="col mb-5">
+            <div class="card h-100">
+                <img height="138px" class="card-img-top" src="./images/image11.jpg" alt="Риба"> 
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <h5 class="fw-bolder">Сушений тунець</h5>
+                        60 грн
+                    </div>
+                  </div>
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                  <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Сушений тунець', 60)">Додати в кошик</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col mb-5">
+          <div class="card h-100">
+              <img height="138px" class="card-img-top" src="./images/image12.jpg" alt="Риба"> 
+              <div class="card-body p-4">
+                  <div class="text-center">
+                      <h5 class="fw-bolder">Жовтий смугастик</h5>
+                      90 грн
+                  </div>
+                </div>
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Жовтий смугастик', 90)">Додати в кошик</a></div>
+              </div>
+          </div>
+      </div>
+      <div class="col mb-5">
+        <div class="card h-100">
+            <img height="150px" class="card-img-top" src="./images/image13.jpg" alt="Курка"> 
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <h5 class="fw-bolder">Курка гриль</h5>
+                    250 грн
+                </div>
+              </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Курка гриль', 250)">Додати в кошик</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-5">
+        <div class="card h-100">
+            <img class="card-img-top" src="./images/image14.jpg" alt="Курка">
+            <div class="card-body p-4">
+                <div class="text-center">
+                    <h5 class="fw-bolder">Крильця Баффало</h5>
+                    170 грн
+                </div>
+              </div>
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Крильця Баффало', 170)">Додати в кошик</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-5">
+      <div class="card h-100">
+          <img height="150px" class="card-img-top" src="./images/image15.jpg" alt="Шашлик"> 
+          <div class="card-body p-4">
+              <div class="text-center">
+                  <h5 class="fw-bolder">Курячий шашлик</h5>
+                  195 грн
+              </div>
+            </div>
+          <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Курячий шашлик', 195)">Додати в кошик</a></div>
+          </div>
+      </div>
+  </div>
+  <div class="col mb-5">
+    <div class="card h-100">
+        <img class="card-img-top" src="./images/image16.jpg" alt="Джерки"> 
+        <div class="card-body p-4">
+            <div class="text-center">
+                <h5 class="fw-bolder">Курячі джерки</h5>
+                135 грн
+            </div>
+          </div>
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+          <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="javascript:void(0);" onclick="addToCart('Курячі джерки', 135)">Додати в кошик</a></div>
+        </div>
+    </div>
+</div>
+          </div>
+        </div>
+    </section>
+    <div class="py-5" id="cart-items" style="text-align: center;">
+      <h2>Ваш кошик</h2>
+      <ul id="cart-list"></ul>
+      <p>Загальна сума: <span id="total-price">0</span> грн</p>
+       <button class="btn btn-outline-dark mt-auto" onclick="checkout()">Оформити замовлення</button>
+    </div>
+      <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; М'яскоHUB, 2023</p></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
